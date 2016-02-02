@@ -17,11 +17,19 @@ public void setup()
 public boolean palindrome(String word)
 {
   //your code here
+  for(int i = 0; i < word.length(); i++)
+  {
+    
+  }
   return false;
 }
 public String reverse(String str)
 {
     String sNew = new String();
+    for(int i = word.length() - 1; i >= 0; i--)
+    {
+      sNew += substring(i, i + 1);
+    }
     //your code here
     return sNew;
 }
