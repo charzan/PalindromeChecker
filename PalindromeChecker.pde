@@ -25,8 +25,20 @@ public void draw()
 }
 public boolean palindrome(String word)
 {
-  //your code here
-  if(word.equals(reverse(word)))
+  String allLowerCase = new String();
+  String lettersOnly = new String();
+
+  allLowerCase = word.toLowerCase();
+//removes all spaces and other characters
+  for(int i = 0; i < allLowerCase.length(); i ++)
+  {
+    if(Character.isLetter(allLowerCase.charAt(i)))
+    {
+      lettersOnly += allLowerCase.charAt(i);
+    }
+  }
+
+  if(lettersOnly.equals(reverse(lettersOnly)))
   {
     return true;
   }
